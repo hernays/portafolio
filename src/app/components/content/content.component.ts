@@ -1,6 +1,6 @@
 import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-content',
@@ -10,5 +10,14 @@ import { Component } from '@angular/core';
   styleUrl: './content.component.scss'
 })
 export class ContentComponent {
+  @Output() initIntervalo :EventEmitter<boolean> = new EventEmitter(false);
+
+  constructor(
+    private cd: ChangeDetectorRef
+  ){
+
+  }
+  ngOnInit(){
+  }
 
 }

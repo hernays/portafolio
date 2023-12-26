@@ -1,7 +1,26 @@
 <h2>SKills</h2>
-<div class="content_skill">
-    <div class="rotar" #rotar>
-        <div class="skill">HTML</div>
+<div class="contentBtn">
+    <button
+    (click)="previe(1)"
+    >
+        <span><</span>
+        <span><</span>
+        <span><</span>
+    </button>
+    <button
+    (click)="next(1)"
+    >
+        <span>></span>
+        <span>></span>
+        <span>></span>
+    </button>
+</div>
+<div class="content_skill" #rotarOne>
+    <div class="rotar" #rotar id="rotar"
+    >
+        <div class="skill"><img src="../../../../../assets/img/html5_logo02.png" alt="">
+        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia, animi rerum eum accusantium error quod, blanditiis quae maiores distinctio ab dignissimos veritatis dolores nam laudantium ex eius asperiores soluta?</p>
+        </div>
         <div class="skill">CSS</div>
         <div class="skill">SQL</div>
         <div class="skill">Docker</div>
@@ -12,6 +31,6 @@
         <div class="skill">SQL2</div>
         <div class="skill">Docker2</div>
         <div class="skill">PHP2</div>
-        <div class="skill">JAVA2</div>
+        <div class="skill">{{nombre}}</div>
     </div>
 </div>
